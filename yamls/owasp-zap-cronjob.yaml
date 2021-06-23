@@ -13,4 +13,4 @@ spec:
             image: owasp/zap2docker-weekly
             command: ["/bin/sh", "-c"]
             args: ["quick-scan -sc -o '-config api.disablekey=true' -s xss,sqli https://www.youtube.com/"]
-          restartPolicy: Always
+          restartPolicy: OnFailure
