@@ -26,4 +26,4 @@ spec:
             - --spider
             - -s xss,sqli
             - -r http://olavtweather.azurewebsites.net/weather
-      restartPolicy: Never
+      # restartPolicy: Never
