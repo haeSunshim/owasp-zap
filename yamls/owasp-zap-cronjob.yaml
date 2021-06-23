@@ -8,7 +8,6 @@ spec:
     spec:
       template:
         spec:
-          backoffLimit: 0
           containers:
           - name: owasp-zap
             image: owasp/zap2docker-weekly

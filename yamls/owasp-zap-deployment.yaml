@@ -14,7 +14,6 @@ spec:
       labels:
         app: owasp-zap
     spec:
-      backoffLimit: 0
       containers:
       - name: owasp-zap
         image: owasp/zap2docker-stable
