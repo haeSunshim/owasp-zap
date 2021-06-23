@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       # - image: owasp/zap2docker-stable
-      - image: nginx;\
+      - image: nginx
         imagePullPolicy: Always
