@@ -8,9 +8,10 @@ spec:
     spec:
       template:
         spec:
+          backoffLimit: 0
           containers:
           - name: owasp-zap
             image: owasp/zap2docker-weekly
             command: ["/bin/sh", "-c"]
-            args: ["quick-scan -sc -o '-config api.disablekey=true' -s xss,sqli http://Your Url"]
-          # restartPolicy: Never
+            args: ["quick-scan -sc -o '-config api.disablekey=true' -s xss,sqli https://www.youtube.com/"]
+          restartPolicy: Always

@@ -14,6 +14,7 @@ spec:
       labels:
         app: owasp-zap
     spec:
+      backoffLimit: 0
       containers:
       - name: owasp-zap
         image: owasp/zap2docker-stable
@@ -26,4 +27,4 @@ spec:
             - --spider
             - -s xss,sqli
             - -r http://olavtweather.azurewebsites.net/weather
-      # restartPolicy: Never
+      restartPolicy: Always
