@@ -15,5 +15,5 @@ spec:
         app: zap
     spec:
       containers:
-      - image: owasp/zap2docker-live
+      - image: owasp/zap2docker-bare
         name: zap
