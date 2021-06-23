@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - image: owasp/zap2docker-stable
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
